@@ -199,9 +199,7 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
     padding-left: 0;
     margin: 0 0 0 15px;
     justify-content: space-between;
-    width: 52%;
-    /*height: 50px;*/
-    border: 2px solid red;
+    width: 51%;
 }
 
 .list-filtre i {
@@ -400,6 +398,7 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     box-sizing: border-box;
+    object-fit: cover;
 }
 
 .activites-cards .card-title {
@@ -500,20 +499,28 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
     }
 
     .cards img {
-        height: auto;
-        object-fit: cover;
         height: 200px;
-    }
-
-    .activites-cards .card-title {
-        width: 80%;   
     }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     .main-container {
-        padding: 0 20px;
+        padding: 0;
+    }
+
+    .menu-header ul {
+        border: 2px solid red;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu-header ul li {
+        border: 3px solid yellowgreen;
+        width: 50%;
+        text-align: center;
     }
 
     .menu-header ul li:hover {
@@ -557,14 +564,14 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
         display: block;
         height: auto;
         width: 100%;
-        column-count: 2;
         margin-left: 0;
+        border: 2px solid red;
+        
     }
 
     .list-filtre li {
         font-size: 14px;
         margin-top: 20px; 
-        border: 2px solid green;
     }
 
     .info-logement p {
@@ -579,9 +586,44 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
+        border: 3px solid blue; 
     }
 
-    .populaires {     
-        margin-top: 35px;
+    .populaires {
+        border: 2px solid orange;
+    }
+
+    .hebergements-cards {
+        border: 2px solid green;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        border: 2px solid red;
+        background-color: #FFFFFF;
+    }
+
+    .hebergements-cards .card {
+        border: 2px solid blue;
+        width: 100%;
+        height: 207px;
+
+    }
+
+    .populaires-cards {     
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 3px solid red;
+    }
+
+    .populaires-cards .card {
+        border: 2px solid blue;
+        margin-right: 0;
+    }
+
+    .cards img {
+        height: auto;
+        object-fit: cover;
+        height: 200px;
     }
 }

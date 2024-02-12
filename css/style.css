@@ -282,7 +282,7 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
 .hebergements-cards .card {
     width: 33%;
     display: flex;
-    margin-top: 30px;
+    margin-top: 33px;
     flex-direction: column;
     box-sizing: border-box;
 }
@@ -388,7 +388,7 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
 }
 
 .title-section {
-    margin-top: 35px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -408,7 +408,7 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
 }
 
 .activites-cards .card-title h3 {
-    margin-left: 19px;
+    margin: 15px 0 20px 19px;
     font-size: 16px;  
 }
 
@@ -517,7 +517,6 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
 
     .activites-cards .card-title h3 {
         width: 80%;
-        margin-bottom: 20px;
     }
 }
 
@@ -603,7 +602,7 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
     } 
 
     .search-submit i {
-        color: #FFFFFF; /* fin */
+        color: #FFFFFF; /* afficher/cacher loupe desktop/responsive - fin */
     }
 
     .box-filtres {
@@ -617,8 +616,7 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
 
     .list-filtre {
         display: flex;
-        flex-wrap: wrap; 
-        height: auto;
+        flex-wrap: wrap;
         gap: 10px;
     }
 
@@ -626,8 +624,6 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
         width: 35%;
         margin-right: 0;
         margin-bottom: 10px;
-         /* Chaque élément occupe 36% de la largeur pour laisser un léger espace entre eux */
-         /* Espacement entre les éléments */
     }
 
     .filtres h3 {
@@ -636,7 +632,7 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
 
     .info-logement {
         margin-top: 25px;
-        margin-bottom: 35px; 
+        margin-bottom: 35px;
     }
 
     .info-logement p {
@@ -648,19 +644,28 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
         padding: 12px;
     }
 
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 0;
+    }
+
     .populaires {
         margin-top: 0;
-        border: 2px solid blue;
+        margin-bottom: 15px;
     }
 
     .populaires-cards {     
         flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .populaires-cards .card {
-        margin-right: 0;
+        width: 325px;
+        margin-top: 15px;
     }
 
     .cards img {
@@ -669,18 +674,59 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
         height: 200px;
     }
 
-    .hebergements-and-populaires {
-        flex-direction: column-reverse;
-        border: 2px solid red;
-    }
-
     .hebergements-and-populaires .hebergements {
         background-color: #FFFFFF;
+        padding: 20px;
+        margin-bottom: 35px;
+    }
+
+    .article-raw {
+        gap: 0;
+    }
+
+    .hebergements-cards .article-raw {
+        flex-direction: column;
     }
 
     .hebergements-cards .card {
-        width: 100%;
-        height: 207px;
+        margin-top: 15px;
+        width: 335px;
+    }
 
+    .afficher-plus {
+        margin-top: 15px;
+    } 
+
+    .section-activites .title-section {
+        margin-top: 0;
+    }
+    
+    .activites-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .activites-cards .cards {
+        flex-direction: column;
+        width: 315px;
+    }
+    
+    .activites-cards .card-title h3 {
+        margin-top: 15px;
+    }
+
+    .section-footer {
+        flex-direction: column;
+        padding: 30px;
+        gap: 50px;
+    }
+
+    .footer-list {
+        width: 100%;
+        padding: 0; 
+    }
+
+    .section-footer h3 {
+        font-size: 18px;
     }
 }

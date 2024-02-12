@@ -187,7 +187,7 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
     display: flex;
     box-sizing: border-box;
     margin-top: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     align-items: center;
 }
 
@@ -235,6 +235,8 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
 
 .info-logement {
     display: flex;  
+    align-items: center;
+    margin-bottom: 35px;
 }
 
 .info-logement i {    
@@ -247,10 +249,12 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
     justify-content: center;
     width: 25px;
     height: 25px;
+    font-size: 0.8em;
+    padding-left: 1px;
 }
 
 .info-logement p { 
-    margin: 3px 0 35px 10px;
+    margin: 0 0 0 10px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -633,11 +637,13 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
     .info-logement {
         margin-top: 25px;
         margin-bottom: 35px;
+        align-items: center;
+        margin-right: 0;
     }
 
     .info-logement p {
         margin-bottom: 0;
-        font-size: 15px;
+        width: 100%;
     }
 
     .info-logement i {
@@ -706,13 +712,16 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
         gap: 15px;
     }
 
+    .activites-cards .cards img {
+        height: 141px;
+    }
     .activites-cards .cards {
         flex-direction: column;
         width: 315px;
     }
     
     .activites-cards .card-title h3 {
-        margin-top: 15px;
+        margin-top: 14px;
     }
 
     .section-footer {

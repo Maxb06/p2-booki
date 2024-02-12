@@ -177,8 +177,8 @@ input {
     outline: none; /* Retire la bordure autour du texte de recherche */
 }
 
-input:-webkit-autofill{                               /*** trouvé sur google, permet de retirer le fond (bleu en l'occurence) ***/
-    -webkit-box-shadow: 0 0 0 1000px white inset;   /*** propre à chrome "Chrome pré-remplis certains champs de formulaires"  ***/
+input:-webkit-autofill {                             
+    -webkit-box-shadow: 0 0 0 1000px white inset;
 }
 
 /*********** Menu FILTRES **********/
@@ -625,7 +625,7 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
     }
 
     .filtres {
-        width: 35.9%;
+        width: 35.5%;
         margin-right: 0;
         margin-bottom: 10px;
     }
@@ -737,5 +737,26 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
 
     .section-footer h3 {
         font-size: 18px;
+    }
+}
+
+/* Résolutions mobiles - de 365px */
+@media (max-width: 365px) {
+    .filtres {
+        width: 32.6%;
+        gap: 3px;
+    }
+
+    .cards,
+    .populaires-cards .card,
+    .hebergements-cards .card {
+        box-sizing: border-box;
+        width: 310px;
+    }
+
+    .hebergements-and-populaires .populaires,
+    .hebergements-and-populaires .hebergements,
+    .section-activites  {
+        padding: 2px;
     }
 }

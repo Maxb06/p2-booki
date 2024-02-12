@@ -372,7 +372,9 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
     background-color: white;
     box-sizing: border-box;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    border-radius: 20px;    
+    border-radius: 20px;  
+    flex-direction: column;
+    width: 23%;    
 }
 
 /**** Activités à Marseille ****/
@@ -385,34 +387,29 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
     width: 100%;
 }
 
+.title-section {
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
 .activites-cards {
     display: flex;
     margin-bottom: 0;  
     justify-content: space-between;
 }
 
-.activites-cards .cards {
-    display: flex;
-    flex-direction: column;
-    width: 23%;    
-}
-
-.activites-cards img {
+.activites-cards .cards img {
     width: 100%;
     height: 380px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     box-sizing: border-box;
-    object-fit: cover;
+    margin-bottom: 0;
 }
 
-.activites-cards .card-title {
-    margin: 20px; 
-}
-
-.title-section {
-    margin-top: 35px;
-    margin-bottom: 30px;
+.activites-cards .card-title h3 {
+    margin-left: 19px;
+    font-size: 16px;  
 }
 
 /***** FOOTER *******/
@@ -508,8 +505,19 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
         font-size: 13px;
     }
 
-    .cards img {
+    .activites-cards .cards img {
         height: 200px;
+    }
+    
+    .cards .card-title {
+        height: 65px;
+        align-items: center;
+        display: flex;
+    }
+
+    .activites-cards .card-title h3 {
+        width: 80%;
+        margin-bottom: 20px;
     }
 }
 

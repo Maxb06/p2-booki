@@ -183,7 +183,7 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
 
 /*********** Menu FILTRES **********/
 
-.boxfiltre {
+.box-filtres {
     display: flex;
     box-sizing: border-box;
     margin-top: 35px;
@@ -191,12 +191,12 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
     align-items: center;
 }
 
-.boxfiltre p {
+.box-filtres p {
     font-size: 18px;  
     font-weight: 700;
 }
 
-.boxfiltre h3 {
+.box-filtres h3 {
     font-size: 17px;
 }
 
@@ -421,7 +421,7 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
     display: flex;
     background: #F2F2F2;
     margin-top: 35px;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
 
 .footer-list {
@@ -453,13 +453,13 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .boxfiltre {
+    .box-filtres {
         display: flex;
         flex-direction: column;
         margin-top: 35px;
     }
 
-    .boxfiltre p {
+    .box-filtres p {
         margin-top: 0;
         width: 100%;
         text-align: left;  
@@ -598,11 +598,11 @@ input:-webkit-autofill{                               /*** trouvé sur google, p
         color: #FFFFFF; /* fin */
     }
 
-    .boxfiltre {
+    .box-filtres {
         margin-bottom: 0;
     }
 
-    .boxfiltre p {
+    .box-filtres p {
         margin-top: 0;
         margin-bottom: 20px;
     }

@@ -761,6 +761,6 @@ input:-webkit-autofill {
     .hebergements-and-populaires .populaires,
     .hebergements-and-populaires .hebergements,
     .section-activites  {
-        padding: 8px;
+        padding: 20px 5px;
     }
 }

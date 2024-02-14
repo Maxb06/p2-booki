@@ -691,7 +691,6 @@ input:-webkit-autofill {
     }
 
     .cards img {
-        height: auto;
         object-fit: cover;
         height: 200px;
     }
@@ -770,7 +769,6 @@ input:-webkit-autofill {
     .section-activites .cards,
     .populaires-cards .card,
     .hebergements-cards .card {
-        box-sizing: border-box;
         width: 295px;
     }
 

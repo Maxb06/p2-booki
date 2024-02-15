@@ -157,7 +157,8 @@ a {
     font-weight: 700;
     font-size: 18px;
     color: #FFFFFF;
-    box-sizing: border-box;   
+    box-sizing: border-box; 
+    cursor: pointer;  
 }
 
 /* afficher/cacher loupe desktop/responsive */
@@ -221,6 +222,7 @@ input:-webkit-autofill {
     padding: 0 19px; 
     height: 50px;  
     text-align: left;
+    cursor: pointer;
 }
 
 .filtres:hover{
@@ -755,26 +757,3 @@ input:-webkit-autofill {
     }
 }
 
-/* Supplément - Résolution mobile résolution <375px */
-@media (max-width: 355px) {
-    .filtres {
-        width: 32%;
-        gap: 3px;
-    }
-
-    .filtres h3 {
-        font-size: 13px;
-    }
-
-    .section-activites .cards,
-    .populaires-cards .card,
-    .hebergements-cards .card {
-        width: 295px;
-    }
-
-    .hebergements-and-populaires .populaires,
-    .hebergements-and-populaires .hebergements,
-    .section-activites  {
-        padding: 10px;
-    }
-}

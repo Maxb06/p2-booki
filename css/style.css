@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .main-container {
@@ -209,21 +210,18 @@ input:-webkit-autofill {
     align-items: center;
     border: 2px solid #D9D9D9;        
     border-radius: 25px;          
-    padding: 0 19px;          /**** PADDING ******/
+    padding: 0 19px;        /**** PADDING ******/
     height: 50px;  
     cursor: pointer;
     margin-left: 15px;
-}
-
-.list-filtre i {
-    font-size: 1.2em;
-}
-
-.list-filtre .filtres p {
+    box-sizing: border-box;    
     font-size: 17px;
-    margin-left: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
+    font-weight: 700;
+    gap: 10px;
+}
+
+.list-filtre .filtres i {
+    font-size: 1.15em;
 }
 
 .filtres:hover{
@@ -479,6 +477,7 @@ input:-webkit-autofill {
 
     .box-filtres p {
         margin-top: 0;
+        margin-bottom: 20px;
         width: 100%;
         text-align: left;  
     }
@@ -492,11 +491,8 @@ input:-webkit-autofill {
     }
     
     .filtres {
-        margin-left: 0;            /********* PADDING: 0; *********/
-    }
-
-    .list-filtre .filtres p {
-        font-size: 16px; 
+        margin-left: 0;
+        white-space: nowrap;            /********* PADDING: 0; *********/
     }
 
     .hebergements-and-populaires {
@@ -641,17 +637,17 @@ input:-webkit-autofill {
     }
 
     .filtres {
-        width: 35.5%;
+        width: 48.2%;
         margin: 0 0 10px 0;
+        font-size: 14px; 
+        padding: 0; /*retirer pour centrer filtres*/
+        /*justify-content: center; -- Ajouter pour centrer filtres*/
+        
     }
-/*
-    .list-filtre .filtres {
-        border:2px solid red;
-        justify-content: center;
-    }*/
 
-    .list-filtre .filtres p {
-        font-size: 14px;
+    .list-filtre .filtres i {
+        font-size: 1.4em;
+        margin-left: 20px;/*retirer pour centrer filtres*/
     }
 
     .info-logement {
